@@ -3,6 +3,11 @@
     src: url(../font/RobotoReg.ttf);
 }
 
+@font-face{
+    font-family: Pacifico;
+    src: url(../font/Pacifico-Regular.ttf)
+}
+
 
 html,
 body{
@@ -10,18 +15,93 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: RobotoReg;
-    font-size: 12px;
 }
+/* loader start */
+/* #overlayer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: #ffd700;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index:3;
+    border: 4px solid #Fff;
+    top: 50%;
+    animation: loader 2s infinite ease;
+  }
+  
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+  
+@keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes loader-inner {
+    0% {
+    height: 0%;
+    }
+
+    25% {
+    height: 0%;
+    }
+
+    50% {
+    height: 100%;
+    }
+
+    75% {
+    height: 100%;
+    }
+
+    100% {
+    height: 0%;
+    }
+} */
+
+/* loader ends */
 
 .nav{
     width: 100%;
     height: 70px;
     position: fixed;
     line-height: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    /* padding-bottom: 15px; */
     text-align: center;
-    transition:all 0.5s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .nav div.logo{
@@ -32,11 +112,10 @@ body{
 }
 .nav div.logo a{
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 3rem;
     letter-spacing: 0.1em;
-    color: #fff;
-    /* border: solid 4px white; */
+    color: #ea5455;
+    font-family: Pacifico;
  }
 
 .nav div.main_list {
@@ -62,13 +141,13 @@ body{
 
 .nav div.main_list ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #e5e5e5;
     line-height: 70px;
     font-size: 1.5rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #ffd700;
+    color: #ea5455;
 }
 
 .navTrigger{
@@ -77,17 +156,16 @@ body{
 
 .navTrigger {
     cursor: pointer;
-    width: 30px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     margin: auto;
     position: absolute;
     right: 30px;
-    top: 0;
-    bottom: 0;
+    padding-top: 22px;
 }
 
 .navTrigger i {
-    background-color:#ff5e57;
+    background-color:#e5e5e5;
     border-radius: 2px;
     content: '';
     display: block;
@@ -266,7 +344,10 @@ body{
 
 .affix{
     padding: 0;
-    background-color:#ff5e57;
+    background: #2d4059;
+    z-index: 9999;
+    box-shadow: 0 10px 20px rgba(25, 25, 25, 0.5);
+    -webkit-box-shadow: 0 10px 20px rgba(25, 25, 25, 0.5);
 }
 
 /* content Design */
@@ -277,6 +358,54 @@ body{
     background-size: cover;
 }
 
+/* Design page start*/
+.padding-style{
+    padding-top: 150px;
+    padding-bottom: 70px;
+}
+
+.items-design .single-items .items-img{
+    padding-top: 100px;
+    overflow: hidden;
+    border-bottom: 3px solid #ea5455;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.items-design .single-items .items-img img{
+    width: 100%;
+}
+
+.items-design .single-items .items-img .img-caption{
+    position: absolute;
+    bottom: -20%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-out 0s;
+    -webkit-transition: all .5s ease-out 0s;
+    -moz-transition: all .5s ease-out 0s;
+
+}
+
+.items-design .single-items .items-img .img-caption span{
+    color: #121212;
+    background: #ea5455;
+    padding: 20px 0;
+    display: block;
+    cursor: pointer;
+
+}
+
+
+.design-title h2{
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Desing page ends */
 
 /* Responsive */
 @media screen and (min-width: 768px) and (max-width: 1024px){
@@ -324,6 +453,18 @@ body{
     }
     .nav div.media_button {
         display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .design-title h2{
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 575px){
+    .design-title h2{
+        font-size: 33px;
     }
 }
 

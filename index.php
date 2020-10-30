@@ -6,7 +6,7 @@ include "./inc/connc.php"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choyce</title>
+    <title>NOICE</title>
     <meta name="description" content="Custom T-Shirt Designer Website">
 
     <link rel="stylesheet" href="style/bootstrap.min.css">
@@ -15,16 +15,29 @@ include "./inc/connc.php"
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/navbar.js" defer></script>
+    <script src="js/jqueryui.min.js"></script>
 </head>
 <body>
+    <!-- loader end -->
+    <!-- <div id="overlayer"></div>
+    <span class="loader">
+        <span class="loader-inner"></span>
+    </span> -->
+    <!-- loader end -->
     <header>
         <?php include"./inc/navbar.php"?>
     </header>
     
     <div class="content">
-        <img src="imgs/content.jpg" alt="">
-        <img src="imgs/content.jpg" alt="">
+        <img src="imgs/bgTest.jpg" alt="">
+        <img src="imgs/bgTest.jpg" alt="">
     </div>
+    <!-- <script>
+        $(window).load(function(){
+            $(".loader").delay(2000).fadeOut("slow");
+            $("#overlayer").delay(2000).fadeOut("slow");
+        })
+    </script> -->
 </body>
 </html>
 

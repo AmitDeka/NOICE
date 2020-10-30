@@ -3,12 +3,12 @@
 <nav class="nav">
         <div class="container-fluid">
             <div class="logo">
-                <a href="#">noice</a>
+                <a href="index.php">Noice</a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Design</a></li>
+                    <li><a href="design.php">Design</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Testimonial</a></li>
                     <li><a href="#">Login</a></li>
